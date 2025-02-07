@@ -189,18 +189,57 @@ button:active {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+  color: black;
 }
 
-.resumeHeader {
-  padding: 30px 0;
+.resumeHeader .contactHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.contactHeader .nameHeader {
+  margin: 3px;
+}
+
+.contactHeader .emailHeader {
+  margin: 3px;
+}
+
+.title {
+  font-size: small;
+  margin: 5px 0 5px 0;
+}
+
+.listItems {
+  font-size: small;
+  padding: 0;
+  margin: 3px 0 3px 0;
+}
+
+.extra {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.listContents {
+  font-size: small;
+}
+
+.listContents p {
+  margin: 0;
+}
+
+.listContents .experienceList {
+  margin-bottom: 10px;
+}
+
+.resumeContents h3 {
+  margin: 5px 0 5px 0;
 }
 
 .resumeContents {
-  display: flex;
-}
-
-.resumeContents .resumeSkills {
-  width: 100px;
-  height: 600px;
-  border-right: solid 2px rgb(90, 87, 92);
+  text-align: left;
+  padding: 10px;
 }
