@@ -79,6 +79,35 @@ function App() {
     setSubmit((prev) => ({...prev, skills: skill}))
   }
 
+  // remove buttons
+
+  const handleContactRemove = () => {
+    if (contact.length >= 1) {
+      setContact(contact.slice(0, contact.length - 1));
+    }
+    if (contact.length == 1) {
+      setContact([]);
+    }
+  }
+
+  const handleExperienceRemove = () => {
+    if (input.length >= 1) {
+      setInput(input.slice(0, input.length - 1));
+    }
+    if (input.length == 1) {
+      setInput([]);
+    }
+  }
+
+  const handleSkillRemove = () => {
+    if (skill.length >= 1) {
+      setSkill(skill.slice(0, skill.length - 1));
+    }
+    if (skill.length == 1) {
+      setSkill([]);
+    }
+  }
+
   return (
     <>
       <div className='header'>
@@ -115,9 +144,8 @@ function App() {
           </div>
           <button onClick={addContact} className='addContact'>+</button>
         </>
-        <button onClick={handleContactSubmit} className="submit1">
-          Submit
-        </button>
+        <button onClick={handleExperienceRemove} className='remove1'>Remove</button>
+        <button onClick={handleContactSubmit} className="submit1">Submit</button>
       </div>
 
 
@@ -163,6 +191,7 @@ function App() {
           </div>
           <button onClick={addInput} className='addExperience'>+</button>
         </>
+        <button onClick={handleExperienceSubmit} className='remove2'>Remove</button>
         <button onClick={handleExperienceSubmit} className='submit2'>Submit</button>
       </div>
       
@@ -183,6 +212,7 @@ function App() {
           </div>
           <button onClick={addSkill} className='addSkill'>+</button>
         </>
+        <button onClick={handleSkillRemove} className='remove3'>Remove</button>
         <button onClick={handleSkillSubmit} className='submit3'>Submit</button>
       </div>
 

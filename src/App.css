@@ -69,6 +69,7 @@ button:hover {
   background-color: #2673f7;
   box-shadow: 0 0 0 5px #b65ff0;
   color: #fff;
+
 }
 
 button:active {
@@ -162,7 +163,7 @@ button:active {
 }
 
 .skills button {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 /* CV */
